@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 70px;
+    width: 90%;
+    
+    margin: auto;
+    
+    color:black;
+}
+nav .btn {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    justify-content: center;
+}
+.join {
+    border: 1px solid #ffffff;
+    border-radius: 80px;
+    padding: 3px 24px;
+    font-size: 20px;
+}
+nav .logo {
+    font-size: 2.5em;
+    font-weight: 600;
+    color:aliceblue;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+nav button {
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00AB6B;
+    color: #ffffff;
+}
+.inp {
+    width: 60%;
+    margin: auto;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.navhead {
+    
+    background-image: url('https://cdn.pixabay.com/photo/2023/07/27/14/49/milky-way-8153503_1280.jpg');
+    height: 700px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    top: -70px;
+    
+    
+}
+.header {
+    padding-top: 100px;
+    line-height: 100px;
+}
+.header h1 {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+.header p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.pixaby {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.imageBtn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-x: scroll;
+    gap: 10px;
+    margin: 30px 0;
+    position: relative;
+    
+}
+.imageBtn::-webkit-scrollbar {
+    display: none;
+}
+.imageBtn button {
+  background-color :bisque;
+  border-radius: 8px;
+  color:black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 14px;
+  text-align: center;
+  vertical-align: baseline;
+  touch-action: manipulation;
+}
+
+.pixaby input {
+    
+    height: 55px;
+    width: 70%;
+    border-radius: 40px;
+    padding-left: 8px;
+    text-align: left;
+    font-size:16px;
+    color: gray;
+    
+}
+
+.input-container i{
+    color: white;
+    
+}
+.api {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icon-btns{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1px;
+    margin: 1px;
+}
+button {
+    background-color:beige;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 14px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button i {
+    margin-right: 5px; /* Adjust the space between icon and text */
+  }
+  
+  button:hover {
+    background-color:gray;
+    opacity:0.6;
+  }
+
+@media screen and (max-width:750px) {
+    .header {
+        padding-top: 10px;
+        line-height: 50px;
+    }
+    nav .btn{
+        gap: 20px;
+    }
+    nav .btn a {
+        display: none;
+    }
+    .pixaby input {
+    
+        height: 55px;
+        width: 100%;
+        border-radius: 40px;
+        border: 3px solid black;
+        text-align: center;
+        font-size: 15px;
+        color: gray;
+        
+    }
+}
